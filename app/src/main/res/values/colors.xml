@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="applight">#ffffffff</color>
+    <color name="appdark">#ff6b6b</color>
+    <color name="app_light">#ffff9c89</color>
+    <color name="white">#ffffff</color>
+    <color name="trans_white">#ceffffff</color>
+    <color name="pressed_button">#667788</color>
+    <color name="sopia">#ffe5e5e5</color>
+    <color name="buLight">#ff993118</color>
+    <color name="blue">#0000ff</color>
+    <color name="black">#000000</color>
+    <color name="label">#5E5E5E</color>
+    <color name="sky_dark">#0099cc</color>
+    <color name="sky_light">#50c0e9</color>
+    <color name="bckground">#ffe90572</color>
+
+</resources>

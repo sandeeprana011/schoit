@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appdark"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="left">
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/edittext_style_2"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/edit_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_email"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/edittext_style_2"
+            android:hint="First Name"
+            android:inputType="textWebEditText"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_full_name"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/edittext_style_2"
+            android:hint="Last Name"
+            android:inputType="textWebEditText"
+            android:padding="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/edittext_style_2"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:typeface="monospace" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/text_countrycode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_group_gender"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_style_2"
+            android:hint="+91"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group_gender"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_toRightOf="@+id/text_countrycode"
+            android:background="@drawable/edittext_style_2"
+            android:hint="Mobile Number"
+            android:padding="10dp" />
+
+        <RelativeLayout
+
+            android:id="@+id/relative_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_mobile"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@color/accent_material_light"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edit_addressline1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:background="@drawable/edittext_style_2"
+                android:hint="House No,Street Adress"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edit_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_addressline1"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:background="@drawable/edittext_style_2"
+                android:hint="My City"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edit_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_city"
+                android:background="@drawable/edittext_style_2"
+                android:hint="Country"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/or_pcikplace"
+                style="@style/TextViewCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_country"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="OR" />
+
+            <Button
+                android:id="@+id/pickplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/or_pcikplace"
+                android:background="@drawable/button_style_3"
+                android:text="PICK PLACE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickplace"
+                android:padding="5dp"
+                android:text="Pick a Place to set my address."
+                android:textColor="@color/white"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_place"
+            android:background="@drawable/button_style_3"
+            android:text="REGISTER"
+            android:textColor="@color/appdark"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appdark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/app_light"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/t_st_label_loca"
+                style="@style/TextViewCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search in:" />
+
+            <CheckBox
+
+                android:id="@+id/ch_st_curloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_st_label_loca"
+                android:checked="true"
+                android:gravity="center"
+                android:text="my Current Location"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/t_st_or"
+                style="@style/TextViewCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ch_st_curloc"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="OR" />
+
+            <Button
+                android:id="@+id/but_st_pickplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_st_or"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_style_3"
+                android:enabled="false"
+                android:hint="PICK PLACE"
+                android:onClick="tutor_search_pickplace"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/but_st_pickplace"
+                android:layout_marginLeft="10dp"
+                android:text="Pick a place from the map to get more precise results."
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+            <Spinner
+                android:id="@+id/spin_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/spiner_style"
+                android:popupBackground="@color/black"
+                android:theme="@android:style/Widget.Holo.Spinner" />
+
+            <EditText
+                android:id="@+id/st_e_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spin_class"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edittext_style_2"
+                android:hint="Subject name here"
+
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spin_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/st_e_class"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/spiner_style"
+                android:popupBackground="@color/black"
+                android:theme="@android:style/Widget.Holo.Spinner" />
+
+            <EditText
+                android:id="@+id/st_e_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spin_subject"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edittext_style_2"
+                android:hint="Subject name here"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/st_e_subject"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style_3"
+                android:text="SEARCH" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

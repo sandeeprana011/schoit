@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appdark"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/text_email"
+            style="@style/TextViewCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Email-ID:" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_email"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_style_2"
+            android:hint="example@gmail.com"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+
+        <TextView
+
+            android:id="@+id/text_full_name"
+            style="@style/TextViewCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_email"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="Full Name:" />
+
+        <EditText
+            android:id="@+id/edit_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_full_name"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/edittext_style_2"
+            android:hint="e.g Vivek Rana"
+            android:inputType="textWebEditText"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/text_gender"
+            style="@style/TextViewCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_full_name"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="Gender:" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_gender"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/edittext_style_2"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_address"
+            style="@style/TextViewCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_group_gender"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="Full Address:" />
+
+        <EditText
+            android:id="@+id/edit_addressline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_address"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/edittext_style_2"
+            android:hint="House No,Street Adress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_addressline1"
+            android:background="@drawable/edittext_style_2"
+            android:hint="e.g New Delhi"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+</ScrollView>

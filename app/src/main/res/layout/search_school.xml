@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appdark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/app_light"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/t_ss_label_loca"
+                style="@style/TextViewCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search in:" />
+
+            <CheckBox
+                android:id="@+id/ch_ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_ss_label_loca"
+                android:checked="true"
+                android:gravity="center"
+                android:text="my Current Location"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/t_ss_or"
+                style="@style/TextViewCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ch_ss"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="OR" />
+
+            <Button
+                android:id="@+id/choose_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_ss_or"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_style_3"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="LET ME PICK"
+                android:onClick="tutor_search_pickplace"
+                />
+
+            <TextView
+                android:id="@+id/t_ss_chooseplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/choose_place"
+                android:layout_marginLeft="10dp"
+                android:text="Pick a place manually on the map for more precise results."
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style_3"
+                android:text="SEARCH" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

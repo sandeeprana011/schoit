@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Schoit</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="htmlformattted"><string name="my_text">
+  <![CDATA[
+    <b>Autor:</b> Mr Nice Guy<br/>
+    <b>Contact:</b> myemail@grail.com<br/>
+    <i>Copyright © 2011-2012 Intergalactic Spacebar Confederation </i>
+  ]]>
+</string> </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_splash_screeen">SplashScreeen</string>
+    <string-array name="array_subject">
+        <item>Select Subject...</item>
+        <item>Science</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Mathematics</item>
+        <item>Computer</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Other...</item>
+    </string-array>
+    <string-array name="array_class">
+        <item>Select Class...</item>
+        <item>below 6th</item>
+        <item>6th to 10th</item>
+        <item>11th to 12th</item>
+        <item>Other...</item>
+    </string-array>
+</resources>

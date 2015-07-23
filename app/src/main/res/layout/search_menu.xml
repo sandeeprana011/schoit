@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tutorprofileshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="@color/material_deep_teal_500"
+        android:gravity="left"
+
+        android:onClick="tutor_near_by"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/tutor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_tutor"
+
+            />
+
+        <TextView
+            android:id="@+id/t_p_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tutor"
+            android:text="TUTOR NEAR BY"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_p_nearby"
+            android:layout_toRightOf="@id/tutor"
+            android:text="FIND BEST TUTORS NEAR ME"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="@color/appdark"
+        android:gravity="left"
+        android:onClick="school_near_by"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/img_school"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_search_school"
+
+            />
+
+        <TextView
+            android:id="@+id/t_p_schoolnearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_school"
+            android:text="SCHOOL NEAR BY"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t_p_schoolnearby"
+            android:layout_toRightOf="@+id/img_school"
+            android:text="SEARCH BEST SCHOOLS NEAR ME"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="@color/material_blue_grey_800"
+        android:gravity="left"
+        android:onClick="login_register"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_register"
+
+            />
+
+
+        <TextView
+            android:id="@+id/t_p_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_login"
+            android:text="LOGIN or REGISTER"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="monospace"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_p_login"
+            android:layout_toRightOf="@+id/img_login"
+            android:text="REGISTER AS A HOME TUTOR \nTO GER HIRED"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="#ffc70528"
+        android:gravity="left"
+        android:onClick="stu_corner"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/img_stu_corner"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_student" />
+
+        <TextView
+            android:id="@+id/t_p_stu_cor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_stu_corner"
+            android:text="STUDENT CORNER"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t_p_stu_cor"
+            android:layout_toRightOf="@id/img_stu_corner"
+            android:text="LOGIN/REGISTER TO COMMUNICATE "
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="#ff0488a5"
+        android:gravity="left"
+        android:onClick="help"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/img_help"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_help"
+
+            />
+
+        <TextView
+            android:id="@+id/t_p_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_help"
+            android:text="HELP"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t_p_help"
+            android:layout_toRightOf="@id/img_help"
+            android:text="HELP ME/ABOUT US"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+
+</LinearLayout>
